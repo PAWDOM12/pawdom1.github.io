@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ORDER</title>
+	<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+	<style type="text/css">
+		body{
+			background-color: #000000;
+			background-size: cover;
+			font-family: sans-serif;
+		}
+		*{
+			box-sizing: border-box;
+		}
+		.wrapper{
+			max-width: 450px;
+			height: auto;
+			background-color: #fff;
+			padding: 60px;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			position: absolute;
+			border-radius: 20px;
+		}
+		h1{
+			margin: auto;
+			text-align: center;
+			margin-top: 0;
+			margin-bottom: 20px;
+			font-weight: bold;
+			color:  #000000;
+		}
+		.btn{
+			width: 60%;
+			background: #000000;
+			text-align: center;
+			padding: 12px;
+			border-radius: 30px;
+			color: white;
+			font-size: large;
+			text-decoration: underline;
+			margin: 50px 65px 10px; 
+		}
+		::placeholder{
+			color: black;
+		}
+		.input_field{
+			position: relative;
+			margin-bottom: 10px;
+		}
+		.input{
+			width: 100%;
+			padding: 12px;
+			padding-left: 30px;
+			border: none;
+			background-color: #eeeeee;
+		}
+		.input_field i{
+			position: absolute;
+			top: 10px;
+			left: 10px;
+		}
+		.Social_media{
+			display: flex;
+			justify-content: center;
+			margin-bottom: 20px;
+		}
+		.item{
+			margin: 0 5px;
+			width: 35px;
+			height: 35px;
+			text-align: center;
+			border: 2px solid #eeeeee;
+			border-radius: 50%;
+			line-height: 35px;
+			cursor: pointer;
+			transition: all 0.5s ease;
+		}
+		.item:hover{
+			border: 2px solid #000000;
+			color: #000000;
+		}
+	</style>
+</head>
+<body>
+
+<div class="wrapper">
+<form action="afterorderpage.html" target="_blank" method="GET">
+<h1>ORDER</h1>
+<div class="input_field">
+<i class="fas fa-user"></i>
+<input type="text" name="Name" placeholder="Name" class= "input">
+</div>
+	<div>
+	<i class="fas fa-globe-americas"></i>
+	<label>Country:
+	<select name="Co" style="border-radius: 15px;">
+			<option>India</option>
+					<option>UAE</option>
+					<option>USA</option>
+					<option>Canada</option>
+					<option>London</option>
+					<option>other</option>
+		</select>
+        </div>
+<div class="input_field">
+<i class="far fa-envelope"></i>
+<input type="text" name="Address" placeholder="Address" class= "input">
+</div>
+<div>
+	<label>Your order:</label>
+	<br>
+	<i class="fas fa-utensils"></i>
+	<label> Food:</label>
+	<br>
+	<br>
+	<select name="Co" style="border-radius: 15px;">
+			<option>Pedigree- dog food</option>
+					<option>Kaytee- Hamster food</option>
+					<option>Whiskas- cat food</option>
+					<option>Kaytee- Rabbit Food</option>
+					<option>Kaytee- Bird food</option>
+					<br>
+					<br>
+				</select>
+				<br>
+				<br>
+	<i class="fas fa-gamepad"></i>
+	<label> Toys and Cages:</label>
+	<br>
+	<br>
+	<select name="Co" style="border-radius: 15px;">
+					<option>All for paws- cat toys</option>
+					<option>West paws- dog toys</option>
+					<option>Kaytee- hamster cage and toys</option>
+					<option>Kaytee- Bird cage</option>
+					<option>Kaytee- Rabbit Cage</option>
+					<option>Kaytee- Rabbit Toy</option>
+					<option>Kaytee- Hamster Toy</option>
+					<option>Kaytee- Bird Toy</option>
+		</select>
+        </div>
+        <br>
+        <div>
+        <div>
+        	<label>Choose Payment Type:</label>
+        	<br>
+		<i class="fas fa-money-bill-alt"></i>
+		<label>Cash</label>
+		<input type="radio" name="money">
+		<i class="fas fa-money-check"></i>
+		<label>Card</label>
+		<input type="radio" name="money">
+	</div>
+	<br>
+	<label> Payment:</label>
+	<br>
+	<select name="Co" style="border-radius: 15px;">
+		<option>Mashreq</option>
+		<option>RAK Bank</option>
+		<option>Emirates NBD</option>
+		<option>Kotak Mahindra Bank</option>
+		<option>IDFC Bank</option>
+		<option>Bank of Baroda</option>
+	<option>Cash on delivery</option>
+					<option>Online cash transaction</option>
+					<option>NONE</option>	
+					<br>
+					<br>
+        </div>
+        <br>
+        <br>
+        <div class= "input_field">
+        		<i class="far fa-credit-card"></i>
+        	<input type="text" name="Credit card no." placeholder="Credit Card no." class= "input">
+        </div>
+		<button class="btn">PLACE ORDER</button>
+	</form>
+</div>
+</body>
+</html>

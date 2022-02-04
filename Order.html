@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LOG IN</title>
+	<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+	<style type="text/css">
+		body{
+			background-color: #000000;
+			background-size: cover;
+			font-family: sans-serif;
+		}
+		*{
+			box-sizing: border-box;
+		}
+		.wrapper{
+			max-width: 450px;
+			height: auto;
+			background-color: #fff;
+			padding: 60px;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			position: absolute;
+			border-radius: 20px;
+		}
+		h1{
+			margin: auto;
+			text-align: center;
+			margin-top: 0;
+			margin-bottom: 20px;
+			font-weight: bold;
+			color:  #000000;
+		}
+		.btn{
+			width: 50%;
+			background: #000000;
+			text-align: center;
+			padding: 12px;
+			border-radius: 25px;
+			color: white;
+			font-size: large;
+			text-decoration: underline;
+			margin: 50px 65px 10px; 
+		}
+		::placeholder{
+			color: black;
+		}
+		.input_field{
+			position: relative;
+			margin-bottom: 10px;
+		}
+		.input{
+			width: 100%;
+			padding: 12px;
+			padding-left: 30px;
+			border: none;
+			background-color: #eeeeee;
+		}
+		.input_field i{
+			position: absolute;
+			top: 10px;
+			left: 10px;
+		}
+		.Social_media{
+			display: flex;
+			justify-content: center;
+			margin-bottom: 20px;
+		}
+		.item{
+			margin: 0 5px;
+			width: 35px;
+			height: 35px;
+			text-align: center;
+			border: 2px solid #eeeeee;
+			border-radius: 50%;
+			line-height: 35px;
+			cursor: pointer;
+			transition: all 0.5s ease;
+		}
+		.item:hover{
+			border: 2px solid #000000;
+			color: #000000;
+		}
+	</style>
+</head>
+<body>
+
+<div class="wrapper">
+<form action="inter house main page.html" target="_blank" method="GET">
+<h1>ORDER</h1>
+<div class="input_field">
+<i class="fas fa-user"></i>
+<input type="text" name="Name" placeholder="Name" class= "input">
+</div>
+	<div>
+	<i class="fas fa-globe-americas"></i>
+	<label>Country:
+	<select name="Co" style="border-radius: 15px;">
+			<option>India</option>
+					<option>UAE</option>
+					<option>USA</option>
+					<option>Canada</option>
+					<option>London</option>
+		</select>
+        </div>
+<div class="input_field">
+<i class="far fa-envelope"></i>
+<input type="text" name="Address" placeholder="Address" class= "input">
+</div>
+<div>
+		<i class="fab fa-html5"></i>
+	<label>Your order:</label>
+	<br>
+			<label>Pedigree- dog food</label>
+			<input type="checkbox" name="tick">
+			<br>
+					<Label>Kaytee- Hamster food</Label>
+					<input type="checkbox" name="tick">
+					<br>
+					<Label>Whiskas- cat food</label>
+						<input type="checkbox" name="tick">
+						<br>
+					<label>Kaytee- Rabbit Food</label>
+					<input type="checkbox" name="tick">
+					<br>
+					<label>Kaytee- Bird food</label>
+					<input type="checkbox" name="tick">
+					<br>
+					<label>All for paws- cat toys</label>
+					<input type="checkbox" name="tick">
+					<br>
+					<label>West paws- dog toys</label>
+					<input type="checkbox" name="tick">
+					<br>
+					<label>Kaytee- hamster cage and toys</label>
+					<input type="checkbox" name="tick">
+					<br>
+					<label>Kaytee- Bird cage</label>
+					<input type="checkbox" name="tick">
+					<br>
+					<label>Kaytee- Rabbit Cage</label>
+					<input type="checkbox" name="tick">
+					<br>
+					<label>Kaytee- Rabbit Toy</label>
+					<input type="checkbox" name="tick">
+					<br>
+					<label>Kaytee- Hamster Toy</label>
+					<input type="checkbox" name="tick">
+					<br>
+					<label>Kaytee- Bird Toy</label>
+					<input type="checkbox" name="tick">
+		</select>
+        </div>
+
+
+		<button class="btn">PLACE ORDER</button>
+	</form>
+</div>
+</body>
+</html>
